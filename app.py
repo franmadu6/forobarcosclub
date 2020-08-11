@@ -18,7 +18,7 @@ def inicio():
 @app.route('/estadisticas',methods=["GET","POST"])
 def obusuario():
         
-    return render_template('premios.html',error= None)
+    return render_template('estadisticas.html',error= None)
 
 #activar estas lineas para que vaya en heroku.
 if __name__ == '__main__':

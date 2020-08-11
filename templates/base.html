@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>ForoBarcosClub</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="../static/img/iconoweb.png" rel="icon">
+    <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../static/lib/venobox/venobox.css" rel="stylesheet">
+    <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <!-- Mis Stylesheet File -->
+    <link href="../static/css/stylemio.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--==========================
+    Header
+  ============================-->
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+                <a href="#intro" class="scrollto"><img src="../static/img/logolargo.png" alt="" title=""></a>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#intro">Home</a></li>
+                    <li><a href="estadisticas">Estadística</a></li>
+                    <li class="buy-tickets"><a href="base.html">Clasificacion</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro">
+        <div class="intro-container wow fadeIn">
+            <h1 class="mb-4 pb-0">¿Quien ganará?<br><span>ForoBarcos Club</span></h1>
+            <p class="mb-4 pb-0">Temporada 2020, Dos Hermanas, Sevilla</p>
+            <a href="#clasificacion" class="about-btn scrollto">Clasificación</a>
+        </div>
+    </section>
+
+    <main id="main">
+
+        <!--==========================
+    Clasificacion Section
+    ============================-->
+        <div id=clasificacion><br></div>
+        {% block clasificacion %} {% endblock %}
+        <div id=clasificacion1><br></div>
+    </main>
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <img id=forobarcos src="../static/img/logopng.png" alt="ForoBarcos logo">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="estadisticas">Estadística</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="#clasificacion">Clasificación</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Links de utilidad</h4>
+                        <ul>
+                            <li><i class="fa fa-angle-right"></i> <a href="https://euw.op.gg/" target='_blank'>OP.GG</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="https://www.leagueofgraphs.com/es/" target='_blank'>League of Graphs</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="https://www.twitch.tv/" target='_blank'>Twitch</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contacto</h4>
+                        <p>
+                            Dos Hermanas, Sevilla <br>
+                            Españita <br>
+                            <strong>Phone:</strong> +34 653 08 65 79<br>
+                            <strong>Email:</strong> asirgames97@gmail.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/forobarcossoloqchagenlle/?hl=es" class="instagram" target='_blank'><i class="fa fa-instagram"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>ForoBarcosSoloClub</strong>. Todos los derechos reservados por los Peaky Blinders
+            </div>
+            <div class="credits">
+                Designed by <a href="https://www.instagram.com/franmadu6/?hl=es" target='_blank'>Fran Madueño</a>
+            </div>
+        </div>
+    </footer><!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="../static/lib/jquery/jquery.min.js"></script>
+    <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/lib/easing/easing.min.js"></script>
+    <script src="../static/lib/superfish/hoverIntent.js"></script>
+    <script src="../static/lib/superfish/superfish.min.js"></script>
+    <script src="../static/lib/wow/wow.min.js"></script>
+    <script src="../static/lib/venobox/venobox.min.js"></script>
+    <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="/contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/mainmio.js"></script>
+</body></html>

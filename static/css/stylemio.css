@@ -1,0 +1,230 @@
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbl-content {
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+
+section#tabla {
+    margin: 5px;
+    background: -webkit-linear-gradient(rgb(6, 12, 34), #404445);
+    /*font-family: 'Comfortaa', cursive;*/
+    border-radius: 10px;
+}
+
+
+/* follow me template */
+.made-with-love {
+    margin-top: 40px;
+    padding: 10px;
+    clear: left;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+}
+
+.made-with-love i {
+    font-style: normal;
+    color: #F50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+.made-with-love a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.made-with-love a:hover {
+    text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+h1#tabla {
+    color: #f82249;
+}
+
+div#lista {
+    margin: 5%;
+    font-weight: 600;
+    text-align: center;
+    margin: 1px;
+}
+
+span.ajugar {
+    color: #f82249;
+    font-weight: 600;
+    background-color: #1d194e;
+    border-radius: 5px;
+}
+
+img#forobarcos {
+    width: 20%;
+    height: 20%;
+}
+
+div#marcoreglas {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+div#marcoreglas1 {
+    background-color: #f82249;
+    margin: 8px;
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+div#marcoreglas2 {
+    background-color: #4d08bc;
+    margin: 8px;
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+div#marcoreglas3 {
+    background-color: #1d1c1c;
+    margin: 8px;
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+img#plataicono {
+    width: 25%;
+    height: 15%;
+}
+
+div#clasificacion {
+    margin: 10px;
+}
+
+div#clasificacion1 {
+    margin: 10px;
+}
+
+input#formulario {
+    text-align: center;
+}
+
+div#contacto {
+    text-align: center;
+}
+
+div#formulario label {
+    color: #555555;
+    align-content: center;
+}
+
+div#formulario {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.texto_responsive:before {
+    content: attr(data-desktoptext);
+}
+
+@media (max-width:900px) {
+    .texto_responsive:before {
+        content: attr(data-tablettext);
+    }
+
+}
+
+@media (max-width:600px) {
+    .texto_responsive:before {
+        content: attr(data-tablettext);
+    }
+
+    div#marcoreglas {
+        display: block;
+    }
+
+}
+
+@media (max-width:500px) {
+    .texto_responsive:before {
+        content: attr(data-phonetext);
+    }
+
+    section#tabla th.none {
+        display: none;
+    }
+
+    section#tabla td.none {
+        display: none;
+    }
+    
+    section#tabla td.menor {
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+    section#tabla td.centro {
+        text-align: center;
+    }
+    
+    div#marcoreglas {
+        display: block;
+    }
+}
+
+td#pickem {
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+
+}

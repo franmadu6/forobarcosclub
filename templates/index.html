@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block clasificacion %}
+<section id=tabla>
+                <!--for demo wrap-->
+                <h1 id=tabla>Clasificación</h1>
+                <div class="tbl-header">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <thead>
+                            <tr>
+                                <th>RANKING</th>
+                                
+                                <th>Nombre de invocador</th>
+                                
+                                <th>Elo</th>
+                                
+                                <th>PARTIDAS</th>
+                                
+                                <th class="none">GANADAS</th>
+
+                                <th class="none">PERDIDAS</th>
+                              
+                                <th class="none"><span class="texto_responsive" data-desktoptext="WINRATE" data-tablettext="WR" data-phonetext="WR"></span></th>
+                            </tr>
+                            
+                        </thead>
+                    </table>
+                </div>
+                <div class="tbl-content">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+			{% for datos in listaj -%}
+                            <tr>
+                                <td class="centro">{{datos['pos']}}</td>
+                                <td class="menor">{{datos['name']}}</td>
+                                <td>{{datos['league']}}</td>
+                                <td class="centro">{{datos['games']}}</td>
+                                <td class="none">{{datos['wins']}}</td>
+                                <td class="none">{{datos['losses']}}</td>
+                                <td class="none">{{datos['winratio']}}</td>	
+                            </tr>
+			{% endfor %}
+              </tbody>
+                    </table>
+                </div>
+            </section>
+{% endblock %}

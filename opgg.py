@@ -1,4 +1,4 @@
-############################ VARIABLES ########################################
+############################ VARIABLES #######################################
 import functools
 from requests_html import HTMLSession
 from bs4 import *
